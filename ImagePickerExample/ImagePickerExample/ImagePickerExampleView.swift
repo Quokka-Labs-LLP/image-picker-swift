@@ -16,8 +16,17 @@ struct ImagePickerExampleView: View {
             Button("Pick", action: {
                 showPicker.toggle()
             })
-            .photosPicker(isPresented: $showPicker) { result in
-                print(result)
+            .sheet(isPresented: $showPicker) {
+                ScrollView(content: {
+                    Button("Camera") {
+                        print("Open camera")
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    Text("Images will appear here")
+                        .presentationDetents([.medium, .large])
+                        .presentationDragIndicator(.visible)
+                }).padding()
             }
         }
         .padding()

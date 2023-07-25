@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import PhotosPicker
+import PhotosUI
 
 struct ImagePickerExampleView: View {
     @State var showPicker: Bool = false
@@ -17,16 +17,7 @@ struct ImagePickerExampleView: View {
                 showPicker.toggle()
             })
             .sheet(isPresented: $showPicker) {
-                ScrollView(content: {
-                    Button("Camera") {
-                        print("Open camera")
-                    }
-                    .buttonStyle(.bordered)
-                    
-                    Text("Images will appear here")
-                        .presentationDetents([.medium, .large])
-                        .presentationDragIndicator(.visible)
-                }).padding()
+                MainImagePickerView()
             }
         }
         .padding()

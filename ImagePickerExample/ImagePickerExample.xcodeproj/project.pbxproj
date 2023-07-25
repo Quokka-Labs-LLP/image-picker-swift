@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2E67D52A6F953D00ABFF2A /* QLPhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E67D42A6F953D00ABFF2A /* QLPhotosPicker.swift */; };
+		5D2E67D72A6FB76E00ABFF2A /* SheetPresentationForSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E67D62A6FB76E00ABFF2A /* SheetPresentationForSwiftUI.swift */; };
+		5D439A162A6A718F0052648C /* MainImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D439A152A6A718F0052648C /* MainImagePickerView.swift */; };
 		5DEFDF072A5FFDC9004FB4E8 /* ImagePickerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFDF062A5FFDC9004FB4E8 /* ImagePickerExampleApp.swift */; };
 		5DEFDF092A5FFDC9004FB4E8 /* ImagePickerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFDF082A5FFDC9004FB4E8 /* ImagePickerExampleView.swift */; };
 		5DEFDF0B2A5FFDCA004FB4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEFDF0A2A5FFDCA004FB4E8 /* Assets.xcassets */; };
 		5DEFDF0E2A5FFDCA004FB4E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEFDF0D2A5FFDCA004FB4E8 /* Preview Assets.xcassets */; };
-		5DEFDF192A600801004FB4E8 /* PhotosPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEFDF182A600801004FB4E8 /* PhotosPicker */; };
-		5DEFDF1C2A601FF8004FB4E8 /* BrightroomEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEFDF1B2A601FF8004FB4E8 /* BrightroomEngine */; };
-		5DEFDF1E2A601FF8004FB4E8 /* BrightroomUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEFDF1D2A601FF8004FB4E8 /* BrightroomUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D2E67D42A6F953D00ABFF2A /* QLPhotosPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLPhotosPicker.swift; sourceTree = "<group>"; };
+		5D2E67D62A6FB76E00ABFF2A /* SheetPresentationForSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationForSwiftUI.swift; sourceTree = "<group>"; };
+		5D2E67DC2A6FBBB300ABFF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5D439A152A6A718F0052648C /* MainImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImagePickerView.swift; sourceTree = "<group>"; };
 		5DEFDF032A5FFDC9004FB4E8 /* ImagePickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEFDF062A5FFDC9004FB4E8 /* ImagePickerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExampleApp.swift; sourceTree = "<group>"; };
 		5DEFDF082A5FFDC9004FB4E8 /* ImagePickerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExampleView.swift; sourceTree = "<group>"; };
@@ -29,15 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DEFDF192A600801004FB4E8 /* PhotosPicker in Frameworks */,
-				5DEFDF1E2A601FF8004FB4E8 /* BrightroomUI in Frameworks */,
-				5DEFDF1C2A601FF8004FB4E8 /* BrightroomEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D2E67D82A6FB77100ABFF2A /* SheetPresentationWithDetents */ = {
+			isa = PBXGroup;
+			children = (
+				5D2E67D62A6FB76E00ABFF2A /* SheetPresentationForSwiftUI.swift */,
+			);
+			path = SheetPresentationWithDetents;
+			sourceTree = "<group>";
+		};
+		5D2E67D92A6FB78600ABFF2A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5DEFDF062A5FFDC9004FB4E8 /* ImagePickerExampleApp.swift */,
+				5DEFDF082A5FFDC9004FB4E8 /* ImagePickerExampleView.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		5D2E67DA2A6FB79500ABFF2A /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5D439A152A6A718F0052648C /* MainImagePickerView.swift */,
+				5D2E67D42A6F953D00ABFF2A /* QLPhotosPicker.swift */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
 		5DEFDEFA2A5FFDC9004FB4E8 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +84,10 @@
 		5DEFDF052A5FFDC9004FB4E8 /* ImagePickerExample */ = {
 			isa = PBXGroup;
 			children = (
-				5DEFDF062A5FFDC9004FB4E8 /* ImagePickerExampleApp.swift */,
-				5DEFDF082A5FFDC9004FB4E8 /* ImagePickerExampleView.swift */,
+				5D2E67DC2A6FBBB300ABFF2A /* Info.plist */,
+				5D2E67DA2A6FB79500ABFF2A /* MainFiles */,
+				5D2E67D82A6FB77100ABFF2A /* SheetPresentationWithDetents */,
+				5D2E67D92A6FB78600ABFF2A /* Example */,
 				5DEFDF0A2A5FFDCA004FB4E8 /* Assets.xcassets */,
 				5DEFDF0C2A5FFDCA004FB4E8 /* Preview Content */,
 			);
@@ -90,9 +119,6 @@
 			);
 			name = ImagePickerExample;
 			packageProductDependencies = (
-				5DEFDF182A600801004FB4E8 /* PhotosPicker */,
-				5DEFDF1B2A601FF8004FB4E8 /* BrightroomEngine */,
-				5DEFDF1D2A601FF8004FB4E8 /* BrightroomUI */,
 			);
 			productName = ImagePickerExample;
 			productReference = 5DEFDF032A5FFDC9004FB4E8 /* ImagePickerExample.app */;
@@ -123,8 +149,6 @@
 			);
 			mainGroup = 5DEFDEFA2A5FFDC9004FB4E8;
 			packageReferences = (
-				5DEFDF172A600801004FB4E8 /* XCRemoteSwiftPackageReference "swiftui-photos-picker" */,
-				5DEFDF1A2A601FF8004FB4E8 /* XCRemoteSwiftPackageReference "Brightroom" */,
 			);
 			productRefGroup = 5DEFDF042A5FFDC9004FB4E8 /* Products */;
 			projectDirPath = "";
@@ -152,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2E67D72A6FB76E00ABFF2A /* SheetPresentationForSwiftUI.swift in Sources */,
+				5D2E67D52A6F953D00ABFF2A /* QLPhotosPicker.swift in Sources */,
 				5DEFDF092A5FFDC9004FB4E8 /* ImagePickerExampleView.swift in Sources */,
 				5DEFDF072A5FFDC9004FB4E8 /* ImagePickerExampleApp.swift in Sources */,
+				5D439A162A6A718F0052648C /* MainImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +312,14 @@
 				DEVELOPMENT_TEAM = 7T7922B75K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImagePickerExample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please give us permission to access your photos library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,11 +344,14 @@
 				DEVELOPMENT_TEAM = 7T7922B75K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImagePickerExample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please give us permission to access your photos library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,43 +387,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5DEFDF172A600801004FB4E8 /* XCRemoteSwiftPackageReference "swiftui-photos-picker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-photos-picker.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		5DEFDF1A2A601FF8004FB4E8 /* XCRemoteSwiftPackageReference "Brightroom" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FluidGroup/Brightroom.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5DEFDF182A600801004FB4E8 /* PhotosPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DEFDF172A600801004FB4E8 /* XCRemoteSwiftPackageReference "swiftui-photos-picker" */;
-			productName = PhotosPicker;
-		};
-		5DEFDF1B2A601FF8004FB4E8 /* BrightroomEngine */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DEFDF1A2A601FF8004FB4E8 /* XCRemoteSwiftPackageReference "Brightroom" */;
-			productName = BrightroomEngine;
-		};
-		5DEFDF1D2A601FF8004FB4E8 /* BrightroomUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DEFDF1A2A601FF8004FB4E8 /* XCRemoteSwiftPackageReference "Brightroom" */;
-			productName = BrightroomUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DEFDEFB2A5FFDC9004FB4E8 /* Project object */;
 }
